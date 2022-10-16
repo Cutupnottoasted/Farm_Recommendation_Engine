@@ -1,6 +1,6 @@
 #-*- coding = utf-8 -*-
 import math
-import numpy as np
+
 rice = [79.890000,47.580000,39.870000,23.689332,82.272822,6.425471,236.181114]
 
 
@@ -71,6 +71,7 @@ coffee = [101.200000,28.740000,29.940000,25.540477,58.869846,6.790308,158.066295
 #soil = [input(), input(), input(), input(), input(), input(), input()]
 soil = [1,2,3,4,5,6,7]
 crops = [rice,maize,chickpea,kidneybeans,pigeonpeas,mothbeans,mungbean,blackgram,lentil,pomegranate,banana,mango,grapes,watermelon,muskmelon,apple,orange,papaya,coconut,cotton,jute,coffee]
+crop_names = ["rice","maize","chickpea","kidneybeans","pigeonpeas","mothbeans","mungbean","blackgram","lentil","pomegranate","banana","mango","grapes","watermelon","muskmelon","apple","orange","papaya","coconut","cotton","jute","coffee"]
 
 def find_Difference(myList, myList2):
     differences = []
@@ -95,10 +96,27 @@ def find_all_distances(soil,crops):
   return all_distances
 
 list_of_all_distances = find_all_distances(soil,crops)
+list_of_all_distances_float = []
 
-list(np.float_(list_of_all_distances))
+for list in list_of_all_distances:
+    list_of_all_distances_float.append(float(list))
 
-print(list_of_all_distances)
+# print(list_of_all_distances_float)
+
+crop_name_distance_pair = []
+for i in range(0,21):
+    two = crop_names[i]
+    three = list_of_all_distances_float[i]
+    list_ = [three, two]
+    crop_name_distance_pair.append(list_)
+print(crop_name_distance_pair)
+
+crop_name_distance_pair.sort()
+print(crop_name_distance_pair)
+# nums = [['one',1],['two',2]]
+# for num in nums:
+#     if num[1] =
+
 
 # print(find_all_distances(find_Distance(find_Difference(soil, crops))))
 #
