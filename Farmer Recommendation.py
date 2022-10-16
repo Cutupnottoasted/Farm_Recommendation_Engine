@@ -67,7 +67,7 @@ jute = [78.400000,46.860000,39.990000,24.958376,79.639864,6.732778,174.792798]
 
 coffee = [101.200000,28.740000,29.940000,25.540477,58.869846,6.790308,158.066295]
 
-soil = [float(input("N:")),float(input("P:")), float(input("K:")), float(input("Temperature:")), float(input("Humidity:")), float(input("pH:")), float(input("Rainfall:"))]
+soil = [float(input("N: ")),float(input("P: ")), float(input("K: ")), float(input("Temperature: ")), float(input("Humidity: ")), float(input("pH: ")), float(input("Rainfall: "))]
 crops = [rice,maize,chickpea,kidneybeans,pigeonpeas,mothbeans,mungbean,blackgram,lentil,pomegranate,banana,mango,grapes,watermelon,muskmelon,apple,orange,papaya,coconut,cotton,jute,coffee]
 crop_names = ["rice","maize","chickpea","kidneybeans","pigeonpeas","mothbeans","mungbean","blackgram","lentil","pomegranate","banana","mango","grapes","watermelon","muskmelon","apple","orange","papaya","coconut","cotton","jute","coffee"]
 
@@ -78,7 +78,7 @@ for crop in crops:
     difference = []
     for i in range(0,6):
         difference_decimal = (soil[i] - crop[i]) / soil[i]
-        difference_mean += difference_decimal
+        difference_mean += abs(difference_decimal)
         difference.append(difference_decimal)
     difference_means.append(abs(difference_mean))
     differences.append(difference)
