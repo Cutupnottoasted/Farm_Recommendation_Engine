@@ -10,3 +10,5 @@ The following web app works to help farmers find the best crops to plant given t
 on their soil. Specifically, they must provide: Nitrogen ratio, Phosphorus ratio, Potassium Ratio, Temperature, Humidity, PH level, and Rainfall. From there, 
 using a csv file with data samples on these 7 conditions and the best recommended crop, we take the data the user gives us and find the crop condition that 
 it is most similar to. We used a least difference equation to find the crop mean that the input is most similar to 
+
+I live version of the site for demo purposes can be found at https://statuesque-kheer-05ca48.netlify.app/. This can be used to visualize the front end of the web app
