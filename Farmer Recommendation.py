@@ -67,10 +67,7 @@ jute = [78.400000,46.860000,39.990000,24.958376,79.639864,6.732778,174.792798]
 
 coffee = [101.200000,28.740000,29.940000,25.540477,58.869846,6.790308,158.066295]
 
-
-
-#soil = [input(), input(), input(), input(), input(), input(), input()]
-soil = [56,24,43,44,55,8,200]
+soil = [float(input("N:")),float(input("P:")), float(input("K:")), float(input("Temperature:")), float(input("Humidity:")), float(input("pH:")), float(input("Rainfall:"))]
 crops = [rice,maize,chickpea,kidneybeans,pigeonpeas,mothbeans,mungbean,blackgram,lentil,pomegranate,banana,mango,grapes,watermelon,muskmelon,apple,orange,papaya,coconut,cotton,jute,coffee]
 crop_names = ["rice","maize","chickpea","kidneybeans","pigeonpeas","mothbeans","mungbean","blackgram","lentil","pomegranate","banana","mango","grapes","watermelon","muskmelon","apple","orange","papaya","coconut","cotton","jute","coffee"]
 
