@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title%}Crops{%endblock%}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'best_crop/styles.css' %}" rel="stylesheet">
+        {% block script %}
+        {% endblock %} 
+    </head>
+    <body>
+        <div id="strip">
+            <div class="banner">
+            </div>
+        </div>
+        <center><div id="headers">
+            <div class="header">
+                <h2>Find The Best Crop For Your Soil!</h2>
+            </div>
+        </div></center>
+        <div id="content">
+        {% block body %}
+        {% endblock %}
+        </div>
+    </body>
+</html>

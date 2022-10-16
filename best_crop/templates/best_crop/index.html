@@ -1,0 +1,25 @@
+{% extends "best_crop/layout.html" %}
+{%load static%}
+{% block body %}
+    <center>
+            <h2>Please enter in your soil information!</h2>
+            <input placeholder="Nitrogen Ratio" id="nitro"/>
+            <input placeholder="Phosphorus Ratio" id="phos"/>
+            <input placeholder="Potassium Ratio" id="pot"/>
+            <input placeholder="Temperature (Celsius)" id="temp"/>
+            <br/>
+            <br/>
+            <input placeholder=" Relative Humidity (%)" id="hum"/>
+            <input placeholder="Ph Level of Soil" id="ph"/>
+            <input placeholder="Rainfall (mm)" id="rain"/>
+            <br/>
+            <br/>
+            <br/>
+            <input type="submit" class="submit"/>
+    </center>
+
+{%endblock%}
+
+{% block script %}
+    <script src="{% static 'best_crop/page.js' %}"></script>
+{% endblock %}

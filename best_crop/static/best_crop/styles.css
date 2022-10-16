@@ -1,0 +1,41 @@
+body{
+    background-image: url(background.jpg);
+}
+  
+#content {
+    position: relative;
+    z-index: 1;
+    
+}
+
+#content:before {
+    border-radius: 20px;
+    content: " ";
+    position: absolute;
+    top: 0; 
+    left: 75px;
+    width: 90%; 
+    height: 500px;  
+    opacity: .7; 
+    z-index: -1;
+    background-color: rgb(192, 233, 250);
+}
+
+input{
+    border-radius: 5px;
+    margin: 0.5em;
+}
+
+.submit{
+    background-color: orange;
+    color: white;
+    font-size: large;
+}
+
+.submit { 
+    transition: all .2s ease-in-out; 
+}
+
+.submit:hover{ 
+    transform: scale(1.1); 
+}
