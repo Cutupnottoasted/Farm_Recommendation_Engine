@@ -63,6 +63,7 @@ blackgram
 lentil
 pomegranate
 banana
+mango
 papaya
 coconut
 cotton
